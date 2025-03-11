@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Star, Truck, Shield, Clock, ArrowRight, StarIcon, Mail } from 'lucide-react';
 
 function Testimonial() {
@@ -66,7 +67,7 @@ function Testimonial() {
             <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src="/public/Testimonial/face_2_1_optimized_250.jpg"
+                  src="/Testimonial/face_2_1_optimized_250.jpg"
                   alt="Customer"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -94,17 +95,19 @@ function Testimonial() {
                 Subscribe to our newsletter and receive exclusive offers, early access to new collections, and style tips from our experts.
               </p>
               <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input
+                {/* <input
                   type="number"
                   placeholder="Enter your email"
                   className="flex-1 px-6 py-3 rounded-full text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button
-                  type="submit"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors"
-                >
-                  Subscribe <Mail className="w-4 h-4" />
-                </button>
+                /> */}
+                <Link to='/contact'>
+                  <button
+                    type="submit"
+                    className="ml-28 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors"
+                  >
+                    Subscribe <Mail className="w-4 h-4" />
+                  </button>
+                </Link>
               </form>
             </div>
           </div>

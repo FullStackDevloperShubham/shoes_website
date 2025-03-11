@@ -4,8 +4,6 @@ import { Shield, Truck, RefreshCcw, Clock, Users, Star } from 'lucide-react';
 function WhyChooseUs() {
   return (
     <div className=" bg-slate-200">
-      {/* Your existing navbar and slider code here */}
-
       {/* Why Choose Us Section */}
       <section className="py-16 px-4 ">
         <div className=" mx-auto">
@@ -47,6 +45,21 @@ function WhyChooseUs() {
               <p className="text-gray-600 text-center">Round-the-clock customer service</p>
             </div>
           </div>
+
+             {/* create a simple form that contain the only number and adress */}
+             <div className="flex flex-col items-center mt-10 p-6  rounded-lg  transition-shadow">
+              <div className=" rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
+                <Users className="w-8 h-8 text-blue-500" />
+              </div>
+              <h4 className="text-2xl font-bold text-gray-900">Contact Us</h4>
+              <form className="flex flex-col gap-4">
+                <input type="text" value={7385911875} placeholder="Name" className="border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" />
+                <input type="email" value={'s35919223@gmail.com'} placeholder="Email" className="border-2 border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:border-blue-500" />
+                {/* <textarea placeholder="Message" className="border-2 border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:border-blue-500 resize:vertical" rows="4"></textarea> */}
+                {/* <button type="submit" className="bg-blue-500 text-white rounded-md p-2 mt-4">Submit</button> */}
+              </form>
+             </div>
+       
 
           {/* Statistics Section */}
           {/* <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 justify-center items-center text-center">

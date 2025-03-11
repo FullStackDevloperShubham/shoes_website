@@ -8,6 +8,9 @@ import LatestCollection from '../LatestCollection/LatestCollection'
 // const LatestCollection = react.lazy(() => import('../LatestCollection/LatestCollection'))
 import Testimonial from '../Testimonial/Testmonial'
 import MapLocation from '../MapLocation/MapLocation';
+import Footer from '../Footer/Footer.jsx'
+// BrowserRouter as Router, Route, Switch, Redirect
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 const AllComponents = () => {
     return (
         <>
@@ -18,6 +21,7 @@ const AllComponents = () => {
             <Testimonial />
             <WhyChooseUs />
             <MapLocation />
+            <Footer/>
         </>
     )
 }

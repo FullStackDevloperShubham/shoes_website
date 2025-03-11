@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { Link } from "react-router-dom";
 // Sample product data
 const products = [
   {
@@ -122,9 +122,11 @@ function App() {
               <h3 className="text-base sm:text-lg font-semibold mt-2 sm:mt-3">{product.name}</h3>
               <p className="text-gray-500 text-sm sm:text-base">{product.price}</p>
               <div className="flex-grow"></div>
-              <button className="mt-2 sm:mt-3 w-full bg-blue-600 text-white py-1.5 sm:py-2 rounded-lg hover:bg-blue-700 text-sm sm:text-base">
+             <Link to='/contact'>
+             <button className="mt-2 sm:mt-3 w-full bg-blue-600 text-white py-1.5 sm:py-2 rounded-lg hover:bg-blue-700 text-sm sm:text-base">
                 Buy Now
               </button>
+             </Link>
             </motion.div>
           );
         })}
